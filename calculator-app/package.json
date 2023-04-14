@@ -1,0 +1,12 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "A simple calculator application built with Node.js and Express",
+  "main": "CalculatorApp.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node CalculatorApp.js"
+  }
+}

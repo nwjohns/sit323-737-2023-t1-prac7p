@@ -1,0 +1,21 @@
+# calculator-app-deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calculator-app-deployment
+spec:
+  replicas: 3 
+  selector:
+    matchLabels:
+      app: calculator-app
+  template:
+    metadata:
+      labels:
+        app: calculator-app
+    spec:
+      containers:
+        - name: calculator-app-container
+          image: nwjohns/calculator-app:1.0.0 
+          ports:
+            - containerPort: 3000
